@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:visibility="visible"
+    tools:context="com.example.lakhan.braintrainer.MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/firstlayout"
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        android:background="@android:color/holo_purple"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="350dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="350dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/select_level"
+            android:textSize="60sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <Button
+            android:id="@+id/EasyButton"
+            android:layout_width="320dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="100dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/background_light"
+            android:onClick="playeasy"
+            android:text="@string/easy"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="75sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <Button
+            android:id="@+id/MediumButton"
+            android:layout_width="320dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="80dp"
+            android:background="@android:color/background_light"
+            android:onClick="playmedium"
+            android:text="@string/medium"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="75sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <Button
+            android:id="@+id/HardButton"
+            android:layout_width="320dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="100dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="380dp"
+            android:background="@android:color/background_light"
+            android:onClick="playhard"
+            android:text="@string/hard"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="75sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/secondlayout"
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <TextView
+            android:id="@+id/sumtext"
+            android:layout_width="318dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="13dp"
+            android:paddingEnd="0dp"
+            android:paddingLeft="38dp"
+            android:paddingRight="0dp"
+            android:paddingStart="38dp"
+            android:paddingTop="1dp"
+            android:text="@string/_999_999"
+            android:textSize="55sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scoretext"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <TextView
+            android:id="@+id/displaytext"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginStart="1dp"
+            android:paddingEnd="0dp"
+            android:paddingStart="25dp"
+            android:text="@string/correct"
+            android:textColor="@android:color/background_dark"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.086"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/grid"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <GridLayout
+            android:id="@+id/grid"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.995"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1">
+
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="190dp"
+                android:layout_height="150dp"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:background="@color/colorAccent"
+                android:onClick="answer"
+                android:tag="0"
+                android:text="@string/_55"
+                android:textSize="75sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="190dp"
+                android:layout_height="150dp"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:background="@android:color/holo_green_light"
+                android:onClick="answer"
+                android:tag="3"
+                android:text="@string/_10"
+                android:textSize="75sp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="190dp"
+                android:layout_height="150dp"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:background="@android:color/holo_red_dark"
+                android:onClick="answer"
+                android:tag="2"
+                android:text="@string/_65"
+                android:textSize="75sp" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="190dp"
+                android:layout_height="150dp"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:background="@color/colorPrimary"
+                android:onClick="answer"
+                android:tag="1"
+                android:text="@string/_52"
+                android:textSize="75sp" />
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/timertext"
+            android:layout_width="137dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="-140dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/_00_30"
+            android:textSize="40sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/scoretext"
+            android:layout_width="217dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="40dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="40dp"
+            android:paddingStart="50dp"
+            android:text="@string/_0_0"
+            android:textSize="40sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/PlayButton"
+        android:layout_width="0dp"
+        android:layout_height="202dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginStart="50dp"
+        android:background="@android:color/background_dark"
+        android:onClick="play"
+        android:text="@string/play_again"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="75sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+</android.support.constraint.ConstraintLayout>
